@@ -32,7 +32,7 @@ const paginaNosotros = (req, res)=>{
 
 const paginaContacto = (req, res)=>{ 
     res.render('contacto',{
-            pagina: "Contactos"
+            pagina: "Contacto"
     });
             }
 
