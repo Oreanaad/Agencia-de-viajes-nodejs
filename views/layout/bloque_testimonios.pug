@@ -1,0 +1,10 @@
+.row.testimoniales.mr-2.ml-2
+    each Testimonio in testimonios
+        .col-md-6.col-lg-4.mb-4
+            .card
+                .card-body
+                    blockquote.blockquote 
+                    p.mb-0 
+                        |#{Testimonio.mensaje}
+                    footer.blockquote-footer 
+                        |#{Testimonio.nombre}

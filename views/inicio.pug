@@ -1,0 +1,31 @@
+extends ./layout/index 
+block slider 
+    .slider 
+        h1 Rio de janeiro 
+        em aventura
+
+block contenido 
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre nosotros 
+        .row.mb-5 
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet tincidunt dolor. Sed sollicitudin odio a ante lacinia eleifend. Nullam at erat ut enim ornare aliquam. Nunc dictum orci at condimentum vestibulum. Nunc est elit, accumsan fringilla mi sit amet, malesuada vestibulum neque. 
+                p Ut purus enim, lobortis id metus at, ullamcorper porttitor velit. Donec mollis ligula et elit elementum, vel pretium enim commodo. Nulla ut commodo maat faucibus quis. Nulla dictum orci eget orci blandit, ac vehicula massa rutrum. Donec tellus lorem, luctus quis orci ac, aliquam pharetra turpis. 
+            .col-md-6
+                img(src="img/inicio_nosotros.jpg", alt="imgnosotros", class="img-fluid")
+    
+        include ./layout/bloque_viajes
+
+    .descuento 
+        .container  
+            .row 
+                .col-md-6   
+                    .contenido 
+                        h3 5% de descuento 
+                        p.titulo Viaje a Cancun 
+                        p.fecha 30 de Agosto de 2024 - 9 Septiembre de 2024 
+                        p.precio $400
+    .container 
+        h2.mt-5.text-center Testimoniales 
+        include ./layout/bloque_testimonios
+                    
